@@ -1,0 +1,32 @@
+<%-include('partials/header')-%>
+<div class="firstdiv">
+<div class="headdiv">
+  <h1 class="resultheading">Possible Species</h1>
+</div>
+</div>
+<div class="allresults">
+    <%for(let i=0; i < sciName.length; i++){%>
+    <div class="resultdiv">
+      <h3><%=i+1%>. <%=names[i]%></h3>
+      <h4>Scientific name: <%=sciName[i]%></h4>
+      <p>
+        <%=description[i]%> <br />
+        <a href="<%=wikiurl[i]%>">Read more</a><br/>
+        <span>Similar Images:</span> <br />
+      </p>
+      <div class="imagediv">
+      <%moreImages[i].forEach(function(imgurl){%>
+      <img src="<%=imgurl%>" alt="" />
+      <%})%>
+    </div>
+  </div>
+    <%}%>
+  </div>
+  <div class="lastdiv">
+    <a href="/">
+    <div class="trydiv">
+      <h1 class="tryagain">Try Again</h1>
+    </div>
+    </a>
+    </div>
+<%-include('partials/footer')-%>

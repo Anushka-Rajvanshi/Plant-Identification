@@ -1,0 +1,18 @@
+<%-include('partials/header')-%>
+  <div class="maindiv container-fluid row">
+    <div class="container-sm col-lg-8 col-md-8 headingdiv">
+      <h1 class="heading">Identify plant species from their images.</h1>
+      <form action="/" method="POST" class="btnform">
+        <button onclick="document.getElementById('getImage').click()" class="btn btn-primary uploadbtn dislodged" type="button"><i class="fas fa-camera-retro "></i> Upload Image</button>
+       <input id="getImage" style="display: none" type="file" name="image" accept=".jpg" onchange="imageUploaded()" />
+        <input type="hidden" name="imageString" id="hidden" />
+        <button type="submit" class="btn btn-primary findbtn dislodged"><i class="fab fa-pagelines "></i> Find!</button>
+      </form>
+    </div>
+    <div class="col-lg-4 col-md-8 imagediv">
+      <img class="vaseImage"src="/images/blueVasecrp.png" alt="A Flower Pot">
+    </div>
+    </div>
+  </div>
+  <%-include('partials/footer')-%>
+ 

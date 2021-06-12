@@ -1,0 +1,102 @@
+/* font-family: 'Playfair Display', serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Suranna', serif; */
+
+.maindiv{
+    padding: 1rem;
+    margin: 3rem auto;
+}
+
+.maindiv div{
+    margin-bottom: 2rem;
+}
+
+.headingdiv{
+    padding: 2rem;
+}
+
+.heading{
+font-family: Playfair Display;
+font-style: normal;
+font-weight: bold;
+font-size: 82px;
+line-height: 85px;
+color: #635050;
+}
+
+.imagediv{
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.vaseImage{
+    margin-bottom: 1rem;
+    /* width: 100%;
+    height: 100%; */
+}
+
+.btnform{
+    padding: 2rem;
+    padding-left: 3rem;
+}
+
+.dislodged{
+    margin: 1rem ;
+    border: none;
+    border-radius: 20px;
+    color: #FFEEFA;
+    font-family: Playfair Display;
+font-style: normal;
+font-weight: bold;
+font-size: 25px;
+line-height: 35px;
+position: relative;
+}
+
+.dislodged, .dislodged:before{
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.dislodged:before {
+    border: 5px solid #AB4B8D;
+    content: "";
+    /* display: block; */
+    height: 104%;
+    position: absolute;
+    width: 100%;
+    top: -10px;
+    right: 12px;
+    /* z-index: -1; */
+  }
+
+
+.uploadbtn{
+    background-color: #EA80CA;
+   padding: 1rem 1.8rem 1.5rem 1.5rem;
+}
+
+.findbtn{
+    background-color: #6A91FA;
+    padding: 0.5rem 3.6rem 1.5rem 2.7rem;
+}
+.findbtn:before{
+    border: 5px solid #3954A1;
+}
+
+.uploadbtn:hover{
+    background-color: #ffa2e2;
+    /* background-color: #EA80CA; */
+    color:#AB4B8D;
+}
+
+.findbtn:hover{
+    background-color: #b9cbfd;
+    color: #3954A1 ;
+}
+
+@media screen and (max-width: 990px) {
+    body {
+        text-align: center;
+    }
+  }

@@ -1,0 +1,146 @@
+.firstdiv{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+.headdiv{
+    text-align: center;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: none;
+    background-color: #FCE07D;
+    position: relative;
+}
+
+
+.headdiv, .headdiv:before{
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.headdiv:before {
+    border: 5px solid #F8C822;
+    content: "";
+    height: 104%;
+    position: absolute;
+    width: 100%;
+    top: -10px;
+    right: 12px;
+  }
+
+.resultheading{
+    font-family: Playfair Display;
+font-style: normal;
+font-weight: bold;
+font-size: 52px;
+line-height: 60px;
+color: #a97941;
+}
+
+.allresults{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 1rem auto;
+    padding: 2rem;
+}
+
+.resultdiv{
+    margin: 2rem 1rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+}
+
+.resultdiv h3{
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 0.6rem;
+    color: #635050;
+}
+
+.resultdiv h4{
+    font-size: 27px;
+    margin-bottom: 0.6rem;
+    color: #AB4B8D;
+}
+
+.resultdiv p{
+    margin-bottom: 0.6rem;
+    color: #7c5e5e;
+    font-size: 20px;
+}
+
+.resultdiv span{
+    font-size: 29px;
+    color: #3954A1;
+    margin-bottom: 0.5rem;
+}
+
+/* .resultdiv a{
+    color: #635050;
+}
+
+.resultdiv a:hover, .resultdiv a:active{
+    color: #472323;
+} */
+
+.imagediv{
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+.imagediv img{
+    height: 20rem;
+    width: auto;
+    margin: 0.6rem 1rem;
+}
+
+.lastdiv{
+    text-align: center;
+    margin: 1rem 2rem 4rem;
+}
+
+
+.trydiv{
+    text-align: center;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: none;
+    background-color: #6A91FA;
+    position: relative;
+}
+
+.trydiv:hover{
+    cursor: pointer;
+}
+
+.trydiv, .trydiv:before{
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.trydiv:before {
+    border: 5px solid #3954A1;
+    content: "";
+    height: 104%;
+    position: absolute;
+    width: 100%;
+    top: -10px;
+    right: 12px;
+  }
+
+  .trydiv a{
+      text-decoration: none;
+  }
+
+.tryagain{
+    font-family: Playfair Display;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 45px;
+color: #FFEEFA;
+}

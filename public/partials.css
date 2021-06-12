@@ -1,0 +1,45 @@
+body{
+    background-color: #fff3e7;
+    /* text-align: center; */
+    height: 100%;
+}
+
+.head{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem ;
+}
+
+.logo{
+    display: inline-block;
+    background-color: #C88EF1;
+    border-radius: 20px;
+    color: #FFEEFA;
+    padding: 1rem 2.6rem;
+    box-shadow: -10px 10px 0px #8A6FF2;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    text-shadow: -5px 5px 0px #8A6FF2;
+}
+
+
+
+footer{
+    text-align: center; color: #855d5d;
+}
+
+footer div{
+    padding-bottom: 5px;
+}
+
+.ficons{
+    margin: 0 0.5rem;
+    color: #855d5d ;
+}
+
+.ficons:hover{
+    color: #463838 ;
+}
