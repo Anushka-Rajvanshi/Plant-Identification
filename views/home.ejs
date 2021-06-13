@@ -4,7 +4,7 @@
       <h1 class="heading">Identify plant species from their images.</h1>
       <form action="/" method="POST" class="btnform">
         <button onclick="document.getElementById('getImage').click()" class="btn btn-primary uploadbtn dislodged" type="button"><i class="fas fa-camera-retro "></i> Upload Image</button>
-       <input id="getImage" style="display: none" type="file" name="image" accept=".jpg" onchange="imageUploaded()" />
+       <input id="getImage" style="display: none" type="file" name="image" accept=".jpg" onchange="imageUploaded()" required/>
         <input type="hidden" name="imageString" id="hidden" />
         <button type="submit" class="btn btn-primary findbtn dislodged"><i class="fab fa-pagelines "></i> Find!</button>
       </form>
