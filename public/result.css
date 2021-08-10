@@ -34,15 +34,15 @@
     font-family: Playfair Display;
 font-style: normal;
 font-weight: bold;
-font-size: 52px;
-line-height: 60px;
+font-size: 2.5rem;
+line-height: 3rem;
 color: #a97941;
 }
 
 .allresults{
     font-family: 'Source Sans Pro', sans-serif;
     margin: 1rem auto;
-    padding: 2rem;
+    /* padding: 2rem; */
 }
 
 .resultdiv{
@@ -88,7 +88,7 @@ color: #a97941;
 
 .imagesdiv{
     margin: 1rem auto;
-    padding: 1rem;
+    /* padding: 1rem; */
 }
 
 .imagesdiv img{
@@ -140,7 +140,36 @@ color: #a97941;
     font-family: Playfair Display;
 font-style: normal;
 font-weight: bold;
-font-size: 40px;
-line-height: 45px;
+font-size: 2.3rem;
+line-height: 2.6rem;
 color: #FFEEFA;
 }
+
+@media screen and (max-width: 580px ){
+    .tryagain{
+        font-size: 2rem;
+        line-height: 2.45rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .resultheading{
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .resultdiv h3{
+        font-size: 28px;
+    }
+    .resultdiv p{
+        font-size: 18px;
+    }
+    .imagesdiv img{
+        width: 80%;
+        height: auto;
+    }
+    .tryagain{
+        font-size: 1.9rem;
+        line-height: 2.1rem;
+    }
+  }
+

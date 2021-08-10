@@ -48,7 +48,7 @@ app.post("/", function (req, res) {
   axios
     .post("https://api.plant.id/v2/identify", data)
     .then((response) => {
-      console.log("Success");
+      // console.log("Success");
       response.data.suggestions.forEach(function (item) {
         names.push(item.plant_name);
         probability.push(item.probability);
