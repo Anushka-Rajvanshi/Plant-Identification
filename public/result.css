@@ -86,12 +86,12 @@ color: #a97941;
     color: #472323;
 } */
 
-.imagediv{
+.imagesdiv{
     margin: 1rem auto;
     padding: 1rem;
 }
 
-.imagediv img{
+.imagesdiv img{
     height: 20rem;
     width: auto;
     margin: 0.6rem 1rem;

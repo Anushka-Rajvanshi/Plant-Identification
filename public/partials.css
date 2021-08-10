@@ -43,3 +43,14 @@ footer div{
 .ficons:hover{
     color: #463838 ;
 }
+
+@media screen and (max-width: 450px) {
+    .logo{
+        font-size: 25px;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .logo{
+        font-size: 22px;
+    }
+  }
