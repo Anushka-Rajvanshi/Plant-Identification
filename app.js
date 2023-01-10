@@ -3,18 +3,20 @@ const ejs = require("ejs");
 var fs = require("fs");
 const https = require("https");
 const axios = require("axios");
-const {
-  SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS
-} = require("constants");
+const { SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS } = require("constants");
 
 const app = express();
 
-app.use(express.static( __dirname + "/public"));
+var path = require("path");
+app.use(express.static(path.join(__dirname, "public")));
+app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
-app.use(express.urlencoded({
-  extended: true,
-  limit: "50mb"
-}));
+app.use(
+  express.urlencoded({
+    extended: true,
+    limit: "50mb",
+  })
+);
 
 app.get("/", function (req, res) {
   res.render("home");
@@ -61,21 +63,28 @@ app.post("/", function (req, res) {
         });
         moreImages.push(arr);
       });
-      res.render('result', {names:names, sciName:sciName, description:description, wikiurl:wikiurl, moreImages:moreImages});
-  }).catch((error) => {
+      res.render("result", {
+        names: names,
+        sciName: sciName,
+        description: description,
+        wikiurl: wikiurl,
+        moreImages: moreImages,
+      });
+    })
+    .catch((error) => {
       console.error("Error: ", error);
     });
-  });
+});
 
-  // app.get("/result", function(req,res){
-    
-  //   res.render('result', {names:names, sciName:sciName, description:description, wikiurl:wikiurl, moreImages:moreImages});
-  // });
+// app.get("/result", function(req,res){
 
-  let port = process.env.PORT;
-  if (port == null || port == "") {
-      port = 3000;
-  }
-  app.listen(port, function (req, res) {
-      console.log("server started successfuly", port);
-  });
+//   res.render('result', {names:names, sciName:sciName, description:description, wikiurl:wikiurl, moreImages:moreImages});
+// });
+
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
+app.listen(port, function (req, res) {
+  console.log("server started successfuly", port);
+});
